@@ -97,9 +97,6 @@ export const TeamMemberRow = ({member} : {member : TeamMember}) =>{
     const updateFullName = (newValue : string) => {
         if(!newValue) return alert('invalid entry for user name');
 
-        console.log(newValue);
-        
-
         setUpdatedInfo(oldValue => ({...oldValue, fullName: newValue}));
     };
     // updates role
@@ -120,7 +117,7 @@ export const TeamMemberRow = ({member} : {member : TeamMember}) =>{
                 />
                 <div className="flex-1 truncate">
                     <TeamMemberName 
-                        fullName={fullName} 
+                        fullName={updatedInfo.fullName} 
                         isEditing={isEditing} 
                         updateFullName={updateFullName} 
                     />
@@ -133,7 +130,7 @@ export const TeamMemberRow = ({member} : {member : TeamMember}) =>{
             {/*team member role, this will determine badge color to display for the team member*/}
             <td className="text-center p-1">
                 <TeamMemberRole 
-                    role={role} 
+                    role={updatedInfo.role} 
                     isEditing={isEditing} 
                     updateRole={updateRole} 
                 />
