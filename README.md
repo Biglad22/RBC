@@ -30,6 +30,31 @@ npm run dev
 
 ## Project Structure
 
+public/                 # Public assets (e.g., images, favicons)
+src/                    # Source code folder
+  ├── assets/           # Static assets like images and fonts
+  ├── components/       # Reusable UI components
+  │   ├── boxIcon/              # Components for icons
+  │   ├── buttons/              # Button components
+  │   ├── calendars/            # Calendar components
+  │   ├── dropDowns/            # Dropdown components
+  │   ├── inputField.tsx        # Input field component
+  │   ├── navComponents/        # Navigation components
+  │   ├── switches/             # Toggle switch components
+  │   ├── teamMember/           # Components for managing team member (name, accessExpiry ..)
+  │   ├── teamPageComponents/   # Components for team-related pages
+  │   ├── teamRole/             # Components for managing team roles
+  │   └── topNav/               # Top navigation bar components
+  ├── layouts/          # Different views of the App 
+  ├── redux/            # Redux slices and store configuration
+  ├── services/         # API service functions
+  ├── App.tsx           # Main application entry component
+  ├── index.css         # Global CSS styles
+  ├── main.tsx          # Application entry point
+  ├── ThemeProvider.tsx # Theme provider for global theming
+  ├── types.ts          # TypeScript types and interfaces
+  └── vite-env.d.ts     # Vite environment type declaration
+
 
 ## Author
 
