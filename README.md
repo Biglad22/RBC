@@ -28,8 +28,9 @@ npm install
 npm run dev
 ```
 
-## Project Structure
+## 📂 Project Structure
 
+```plaintext
 public/                 # Public assets (e.g., images, favicons)
 src/                    # Source code folder
   ├── assets/           # Static assets like images and fonts
@@ -41,11 +42,11 @@ src/                    # Source code folder
   │   ├── inputField.tsx        # Input field component
   │   ├── navComponents/        # Navigation components
   │   ├── switches/             # Toggle switch components
-  │   ├── teamMember/           # Components for managing team member (name, accessExpiry ..)
+  │   ├── teamMember/           # Components for managing team members (e.g., name, access expiry)
   │   ├── teamPageComponents/   # Components for team-related pages
   │   ├── teamRole/             # Components for managing team roles
   │   └── topNav/               # Top navigation bar components
-  ├── layouts/          # Different views of the App 
+  ├── layouts/          # Page layouts for organizing content
   ├── redux/            # Redux slices and store configuration
   ├── services/         # API service functions
   ├── App.tsx           # Main application entry component
